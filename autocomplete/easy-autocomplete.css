@@ -1,0 +1,122 @@
+/*
+ * easy-autocomplete
+ * jQuery plugin for autocompletion
+ * 
+ * @author Łukasz Pawełczak (http://github.com/pawelczak)
+ * @version 1.3.5
+ * Copyright  License: 
+ */
+
+.easy-autocomplete {
+  float: right;
+  width: 100% !important;
+}
+.easy-autocomplete input {
+  color: black;
+  float: right;
+  background-color: rgba(0,0,0,0);
+  margin-right: 5px;
+  border: 0;
+  color: white;
+  text-align: right;
+  outline-width: 0px;
+  font-size: 1.2em;
+  width: 0%;
+  opacity:0;
+          border-bottom: 3px solid white;
+  -webkit-transition-property: width; /* Safari */
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+.easy-autocomplete input.inputHover {
+        width: 100%;
+        opacity: 1;
+    }
+
+
+.easy-autocomplete a {
+  display: block;
+}
+
+
+.easy-autocomplete-container {
+  top: 65px;
+  right: 180px;
+  position:absolute;
+  width: 200px;
+  z-index: 2;
+  padding:0;
+}
+.easy-autocomplete-container ul {
+  background: none repeat scroll 0 0 #000;
+  border-top: 1px dotted #ccc;
+  display: none;
+  margin: 0;
+  width:100%;
+  padding: 4px !important;
+  list-style-type: none;
+  position: relative;
+  right:0;
+  z-index: 999;
+}
+.easy-autocomplete-container ul li, .easy-autocomplete-container ul .eac-category {
+  background: inherit;
+  display: block;
+  width:100%;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 4px 0;
+}
+.easy-autocomplete-container ul li.selected {
+  background: none repeat scroll 0 0 #666;
+  cursor: pointer;
+}
+.easy-autocomplete-container ul li.selected div {
+  font-weight: normal;
+}
+.easy-autocomplete-container ul li div {
+  width: 100%;
+  display: block;
+  font-weight: normal;
+  word-break: break-all;
+}
+.easy-autocomplete-container ul li b {
+  font-weight: bold;
+}
+.easy-autocomplete-container ul .eac-category {
+  color: #000;
+  font-style: italic;
+}
+
+.eac-description .eac-item span {
+  color: #000;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.eac-icon-left .eac-item img {
+
+  max-height: 30px;
+}
+
+.eac-icon-right .eac-item {
+  background-color: black;
+  margin-top: 8px;
+  min-height: 24px;
+  position: relative;
+}
+.eac-icon-right .eac-item img {
+
+  max-height: 30px;
+  position: relative;
+  right: -4px;
+  top: -8px;
+}
+
+
+
+
+
+
+/*# sourceMappingURL=easy-autocomplete.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bingeTV - Film & Serie TV</title>
+    <link rel="stylesheet" href="css/stili.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+  </head>
+  <body>
+    <!-- Testata di navigazione -->
+    <div id="contenitore">
+      <header id="testata">
+        <section id="menu">
+            <a href="index.html"><img class="left logo" src="img/logo.png" /></a>
+          <nav class="left">
+            <ul>
+              <li><a href="guida-tv.html">GUIDA TV</a></li>
+              <li><a href="serie-tv.html">SERIE TV</a></li>
+              <li><a href="film.html">FILM</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id="navMobile">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </section>
+        <section id="navUtente"> 
+          <a href="#">ENTRA</a>
+          <form class="ricerca" action="index.html" method="post">
+              <input type="text" id="ricerca">
+              <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+          </form>
+        </section>
+      </header>
+
+    <section id="slider"><img src="img/slid_poc.jpg"/></section>
+    <div class="clear"></div>
+    <section class="barraHead">
+        <h1 class="left">ULTIME USCITE</h1>
+        <form id="frmFiltri" action="index.html" method="post">
+
+              <select name="genere">
+                <option disabled="disabled" selected="selected" value= "scegli">Scegli il genere</option>
+                <option value="horror">Horror</option>
+                <option value="thriller">Thriller</option>
+                <option value="azione">Azione</option>
+              </select>
+
+                <select name="anno">
+                  <option disabled="disabled" selected="selected" value= "scegli">Scegli l'anno</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                </select>
+
+                <ul class="tbFiltri" >
+                    <li><a>A-Z</a></li>
+                    <li><a>Feedback</a></li>
+                    <li><a>Ultime uscite</a></li>
+                </ul>
+
+          </form>
+    </section>
+    <div class="clear"></div>
+    <section id="contenuto">
+      <section class="locandine">
+        <ul>
+          <li>
+            <img src="img/avatar.jpg" alt="" />
+          </li>
+          <li class="locandina">
+            <img src="img/loc_300.jpg" alt="" />
+          </li>
+          <li class="locandina">
+            <img src="img/loc_mrrobot.jpg" alt="" />
+          </li>
+          <li class="locandina">
+            <img src="img/loc_shining.jpg" alt="" />
+          </li>
+          <li class="locandina">
+            <img src="img/loc_trainspotting.jpg" alt="" />
+          </li>
+          <li class="locandina">
+            <img src="img/loc_pulpfiction.jpg" alt="" />
+          </li>
+          <li class="locandina">
+            <img src="img/loc_quasiamici.jpg" alt="" />
+          </li>
+          <li class="locandina">
+            <img src="img/loc_partocolfolle.jpg" alt="" />
+          </li>
+        </ul>
+      </section>
+
+
+            <div class="clear"></div>
+
+
+          </section>
+
+        <div class="clear"></div>
+
+
+          <footer id="idFooter">
+            <section class="left" id="copyright">
+                <p>Copyright 2016 | Canale 69 | Tutti i diritti sono riservati</p>
+            </section>
+            <section>
+              <nav class="right">
+                <ul>
+                  <li><a href="#">Contatti</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </nav>
+            </section>
+
+          </footer>
+
+  </body>
+</html>

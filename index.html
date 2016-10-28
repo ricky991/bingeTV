@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bingeTV - Film & Serie TV</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+
+<!-- JS file -->
+<script src="autocomplete/jquery.easy-autocomplete.min.js"></script> 
+
+<!-- CSS file -->
+<link rel="stylesheet" href="autocomplete/easy-autocomplete.css"> 
+
+<!-- Additional CSS Themes file - not required-->
+
+<link rel="stylesheet" href="css/stili.css" type="text/css">
+  </head>
+  <body>
+    <!-- Testata di navigazione -->
+    <div id="contenitore">
+      <header id="testata">
+        <section id="menu">
+            <a href="index.html"><img class="left logo" src="img/logo.png" /></a>
+          <nav class="left">
+            <ul>
+              <li><a href="guida-tv.html">GUIDA TV</a></li>
+              <li><a href="serie-tv.html">SERIE TV</a></li>
+              <li><a href="film.html">FILM</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id="navMobile">
+            <a href="#" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </a>
+        </section>
+        <section id="navUtente">
+          
+            <nav class="right">
+              <ul>
+                <li><input type="text" id="ricerca"></li>
+                <li><i id= "lenteSearch" class="fa fa-search fa-2x" aria-hidden="true"></i></li>
+                <li><a href="film.html">ENTRA</a></li>
+              </ul>
+            </nav>
+          
+        </section>
+      </header>
+        <div id="menuMobile" class="hidden">
+            <ul>
+              <li><a href="guida-tv.html">GUIDA TV</a></li>
+              <li><a href="serie-tv.html">SERIE TV</a></li>
+              <li><a href="film.html">FILM</a></li>
+              <li><a href="#">ENTRA</a></li>
+            </ul>
+        </div>
+<div class="clear"></div>
+<div id="slider" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="img/slid_joker.jpg" alt="The Last of us"></div>
+  <div class="item"><img src="img/slid_poc.jpg" alt="GTA V"></div>
+  <div class="item"><img src="img/slid_spiderman.jpg" alt="Mirror Edge"></div>
+ 
+</div>
+
+
+      <aside id="staseraInTv">
+          <h2 class="center">OGGI IN TV</h2>
+          <ul>
+            <li><a href="scheda-film.html"><span>15:00</span> Avatar</a></li>
+            <li><a href="#"><span>17:55</span> Silicon Vallery 2 (Ep. 1)</a></li>
+            <li><a href="#"><span>18:25</span> Silicon Vallery 2 (Ep. 2)</a></li>
+            <li><a href="#"><span>18:50</span> Silicon Vallery 2 (Ep. 3)</a></li>
+            <li><a href="#"><span>19:25</span> Misfits (Ep. 4)</a></li>
+            <li><a href="#"><span>20:10</span> Misfits (Ep. 5)</a></li>
+            <li class="current"><a href="#"><span>18:50</span> Il Cavaliere Oscuro</a></li>
+            <li><a href="#"><span>21:00</span> 300</a></li>
+            <li><a href="#"><span>23:05</span> Mr Robot (Ep. 1)</a></li>
+            <li><a href="#"><span>23:50</span> Mr Robot (Ep. 2)</a></li>
+            <li><a href="#"><span>00:40</span> The Big Bang Theory (Ep. 24)</a></li>
+            <li><a href="#"><span>01:15</span> The Big Bang Theory (Ep. 25)</a></li>
+          </ul>
+      </aside>
+<div class="clear"></div>
+
+      <section class="barraHead">
+          <h1>DA NON PERDERE</h1>
+      </section>
+    </div>
+      <section id="contenuto">
+        <section id="serieTV">
+          <p>SERIE TV</p>
+          <ul>
+            <li>
+              
+              <img src="https://image.tmdb.org/t/p/w500/4ynQYtSEuU5hyipcGkfD6ncwtwz.jpg">
+              <div class="schedaB">
+                <h3>The Big Bang Theory</h3><span>Voto</span>
+                
+                <p>La serie parla di un gruppo di amici che blablablablabla e ancora bla...</p>
+                <a href="">> GUARDA IL TRAILER</a>
+              </div>
+          </li>
+          <li>
+              <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ytQFYBRIecY" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="clear"></div>
+              <div class="feedback">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            <div class="schedaBio">
+                <h2><b>Mr Robot</b></h2>
+                <p>Un ingegnere informatico e Hacker e psicopatico e schizofrenico e fattone...</p>
+            </div>
+          </li>
+         </ul>
+         <a href="#">GUARDA ALTRO >></a>
+        </section>
+        <section id="film">
+          <p>FILM</p>
+          <ul>
+            <li>
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UrIbxk7idYA" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="clear"></div>
+                <div class="feedback">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="schedaBio">
+                    <h2><b>300</b></h2>
+                    <p>Un tizio chiede agli Spartani di sottomettersi ma Leonida non la prende affatto bene...</p>
+                </div>
+            </li>
+            <li>
+                <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ewlwcEBTvcg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="clear"></div>
+                <div class="feedback">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </div>
+                <div class="schedaBio">
+                    <h2><b>Pulp Fiction</b></h2>
+                    <p>Non me lo ricordo benisssimo ma era bello, quindi lorem ipsum dolor sit amete..</p>
+                </div>
+            </li>
+         </ul>
+         <a href="#">GUARDA ALTRO >></a>
+        </section>
+      </section>
+      <div class="clear"></div>
+      <footer id="idFooter">
+          <section id="copyright">
+              <p>Copyright 2016 | Canale 69 | Tutti i diritti sono riservati</p>
+          </section>
+            <nav class="navFooter">
+              <ul>
+                <li><a href="#">Contatti</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </nav>
+      </footer>
+
+      <script>
+        var dati=[];
+$(document).ready(function() {
+
+$.get("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=8c2e916a3787bf701a9acb649475efe0", 
+      function (data) {
+          for(var i=0; data.length;i++) {
+            dati[i]= data.results[i].title;
+          }
+        });
+
+        /*document.getElementById('lenteSearch')
+                .addEventListener('click', function() {
+                 document.getElementById('ricerca')
+                 .classList().add("width");
+                });*/
+
+        $("#lenteSearch").click(function() {
+          $("#ricerca").toggleClass("inputHover");
+        });
+
+// AUTOCOMPLETE
+var options = {
+	//url: "https://api.themoviedb.org/3/movie/popular?api_key=8c2e916a3787bf701a9acb649475efe0&language=it",
+  url: function(phrase) {
+		return "https://api.themoviedb.org/3/search/movie?api_key=8c2e916a3787bf701a9acb649475efe0&language=it&query="+phrase;
+	},
+
+  
+  listLocation: "results",
+	getValue: "title",
+  	requestDelay: 500,
+
+
+  list: {
+		match: {
+			enabled: true
+		}
+	}
+};
+
+$("#ricerca").easyAutocomplete(options);
+
+// SLIDER CAROSELLO
+  $("#slider").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+ 
+  });
+
+
+
+
+    });
+
+function myFunction() {
+    var x = document.getElementById("menuMobile");
+    if (x.classList.contains('hidden')) {
+        x.classList.remove('hidden');
+
+    } else {
+        x.classList.add('hidden');
+
+    }
+}
+
+function validateForm() {
+    var x = "ricerca".value;
+    if (x == null || x == "") {
+        alert("Inserisci il titolo e clicca Invio");
+        return false;
+    }
+}
+
+
+
+</script>
+
+  </body>
+</html>

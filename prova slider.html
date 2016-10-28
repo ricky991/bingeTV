@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bingeTV - Film & Serie TV</title>
+    <link rel="stylesheet" href="css/stili.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+
+  </head>
+  <body>
+
+
+<div id="slider" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="img/slid_joker.jpg" alt="The Last of us"></div>
+  <div class="item"><img src="img/slid_poc.jpg" alt="GTA V"></div>
+  <div class="item"><img src="img/slid_spiderman.jpg" alt="Mirror Edge"></div>
+ 
+</div>
+<script>
+$(document).ready(function() {
+ 
+  $("#slider").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+ 
+  });
+ 
+});
+</script>
+      </body>
+      </html>

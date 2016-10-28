@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bingeTV - Film & Serie TV</title>
+
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+
+<!-- JS file -->
+<script src="autocomplete/jquery.easy-autocomplete.min.js"></script> 
+
+<!-- CSS file -->
+<link rel="stylesheet" href="autocomplete/easy-autocomplete.css"> 
+
+<!-- Additional CSS Themes file - not required-->
+
+<link rel="stylesheet" href="css/stili.css" type="text/css">
+
+  </head>
+  <body>
+<div id="contenitore">
+      <header id="testata">
+        <section id="menu">
+            <a href="index.html"><img class="left logo" src="img/logo.png" /></a>
+          <nav class="left">
+            <ul>
+              <li><a href="guida-tv.html">GUIDA TV</a></li>
+              <li><a href="serie-tv.html">SERIE TV</a></li>
+              <li><a href="film.html">FILM</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id="navMobile">
+            <a href="#" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </a>
+        </section>
+        <section id="navUtente">
+          
+            <nav class="right">
+              <ul>
+                <li><input type="text" id="ricerca"></li>
+                <li><i id= "lenteSearch" class="fa fa-search fa-2x" aria-hidden="true"></i></li>
+                <li><a href="film.html">ENTRA</a></li>
+              </ul>
+            </nav>
+          
+        </section>
+      </header>
+        <div id="menuMobile" class="hidden">
+            <ul>
+              <li><a href="guida-tv.html">GUIDA TV</a></li>
+              <li><a href="serie-tv.html">SERIE TV</a></li>
+              <li><a href="film.html">FILM</a></li>
+              <li><a href="#">ENTRA</a></li>
+            </ul>
+        </div>
+
+<script>
+$(document).ready(function() {
+ 
+  var options = {
+	data: ["blue", "green", "pink", "red", "yellow"],
+  list: {
+		match: {
+			enabled: true
+		}
+	}
+};
+
+$("#ricerca").easyAutocomplete(options);
+ 
+});
+</script>
+      </body>
+      </html>

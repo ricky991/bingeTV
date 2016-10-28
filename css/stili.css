@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Catamaran',sans-serif;
+  box-sizing: border-box; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+/* MENU IN ALTO */
+#testata {
+  color: white;
+  height: 100px;
+  background-color: black;
+  padding: 20px;
+  /*#ricerca {
+      float: right;
+      background-color: rgba(0,0,0,0);
+      margin-right: 5px;
+      border: 0;
+      color: $txtMenuColor;
+      text-align: right;
+      outline-width: 0px;
+      font-size: 1.2em;
+      width: 40px;
+      transition-property: width;
+      transition-duration: 2s;
+      &:focus {
+          width: 180px;
+          border-bottom: 2px white solid;
+      }*/ }
+  #testata a {
+    color: white; }
+    #testata a:hover {
+      color: indianred; }
+  #testata nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    overflow: hidden;
+    padding-left: 40px; }
+    #testata nav ul li {
+      float: left;
+      padding-right: 20px; }
+      #testata nav ul li a {
+        font-size: 1.4rem;
+        display: block;
+        text-align: center;
+        text-decoration: none; }
+  @media screen and (max-width: 1098px) {
+    #testata nav {
+      display: none; } }
+  #testata #menu img.logo {
+    width: 186px;
+    height: 60px; }
+  #testata #navMobile {
+    display: none; }
+    @media screen and (max-width: 1098px) {
+      #testata #navMobile {
+        display: block;
+        color: white;
+        line-height: 70px;
+        float: right; } }
+  #testata #navUtente {
+    width: 100%; }
+    #testata #navUtente nav ul li:first-child {
+      width: 200px; }
+    @media screen and (max-width: 1098px) {
+      #testata #navUtente {
+        display: none; } }
+
+.hidden {
+  display: none; }
+
+#menuMobile {
+  position: relative;
+  text-align: center;
+  height: auto;
+  background-color: black;
+  transition-property: height;
+  transition-duration: 3s; }
+  #menuMobile a {
+    font-size: 1.4rem;
+    display: block;
+    text-decoration: none;
+    color: white; }
+    #menuMobile a:hover {
+      color: indianred; }
+  #menuMobile ul {
+    list-style-type: none; }
+    #menuMobile ul li {
+      padding: 12px; }
+
+/* SLIDER */
+#slider {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -10px; }
+  #slider .item {
+    margin: 0;
+    padding: 0; }
+    #slider .item img {
+      width: 100%;
+      height: auto; }
+
+/* PROGRAMMAZIONE DI OGGI IN TV */
+#staseraInTv {
+  z-index: 2;
+  width: 350px;
+  right: 50px;
+  top: 240px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute; }
+  #staseraInTv h2 {
+    text-align: center;
+    background-color: #6e0000;
+    padding: 20px 0;
+    color: white; }
+  #staseraInTv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    -moz-box-shadow: 1px 5px 7px 1px #000;
+    -webkit-box-shadow: 1px 5px 7px 1px #000;
+    box-shadow: 1px 5px 7px 1px #000; }
+    #staseraInTv ul li a {
+      font-size: 1.2em;
+      display: block;
+      color: black;
+      text-decoration: none; }
+      #staseraInTv ul li a span {
+        font-weight: bold; }
+    #staseraInTv ul li.current {
+      border: 1px black solid;
+      -moz-box-shadow: 1px 3px 4px 1px #000;
+      -webkit-box-shadow: 1px 3px 4px 1px #000;
+      box-shadow: 1px 3px 4px 1px #000;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100%; }
+      #staseraInTv ul li.current a {
+        margin-left: 5px; }
+  @media screen and (max-width: 1098px) {
+    #staseraInTv {
+      width: 100%;
+      background-color: white;
+      position: static; } }
+
+/* DA NON PERDERE */
+.barraHead {
+  text-align: center;
+  background-color: #6e0000;
+  padding: 30px;
+  float: left;
+  width: 100%;
+  color: white;
+  margin-top: -10px; }
+
+#contenuto {
+  margin: 0 auto;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/sfondo1.jpg);
+  background-size: cover;
+  float: left;
+  -webkit-box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.75); }
+  #contenuto #serieTV {
+    width: 49%;
+    border-right: 3px solid #6e0000;
+    float: left; }
+    @media screen and (max-width: 768px) {
+      #contenuto #serieTV {
+        width: 100%;
+        border-right: none;
+        border-bottom: 5px solid #6e0000;
+        margin-bottom: 20px;
+        clear: left; } }
+  #contenuto #film {
+    width: 49%;
+    float: left; }
+    @media screen and (max-width: 768px) {
+      #contenuto #film {
+        width: 100%;
+        clear: left; } }
+  #contenuto p {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    padding-top: 8px; }
+  #contenuto a {
+    font-size: 1.3em;
+    color: white;
+    float: right;
+    text-decoration: none;
+    padding-right: 55px; }
+    #contenuto a:hover {
+      color: indianred; }
+  #contenuto ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px 40px;
+    text-align: center;
+    /*li {
+        height: auto;
+        padding-bottom: 5px;
+        background-color: rgba(255,255,255,0.9);
+        margin: 10px;
+        -moz-box-shadow:    1px 5px 7px 1px #000;
+        -webkit-box-shadow: 1px 5px 7px 1px #000;
+        box-shadow:         1px 5px 7px 1px #000;
+        a {
+            display: block;
+            color: black;
+            text-decoration: none;
+        }
+        .feedback {
+            float: right;
+            width: 100px;
+            padding: 5px;
+        }
+        .schedaBio {
+            h2 {
+                text-align: left;
+                padding-left: 5px;
+            }
+            p {
+                text-align: left;
+                font-size: 1em;
+                padding: 5px;
+                min-height: 60px;
+                color: black;
+            }
+        }
+    }*/ }
+    @media screen and (max-width: 768px) {
+      #contenuto ul {
+        padding: 20px 0; } }
+    #contenuto ul li {
+      position: relative;
+      width: 100%;
+      height: inherit;
+      -moz-box-shadow: 1px 5px 7px 1px #000;
+      -webkit-box-shadow: 1px 5px 7px 1px #000;
+      box-shadow: 1px 5px 7px 1px #000; }
+      #contenuto ul li img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      #contenuto ul li .schedaB {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 2;
+        text-align: left;
+        font-size: 1em; }
+      #contenuto ul li p {
+        font-size: 1em;
+        text-align: left;
+        color: black; }
+      #contenuto ul li a {
+        padding-right: 10px;
+        font-size: 1.1em; }
+  @media screen and (max-width: 768px) {
+    #contenuto {
+      padding: 10px;
+      margin: 0 auto; } }
+
+i.fa-star, i.fa-star-half {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: gold !important; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* FOOTER */
+#idFooter {
+  color: white;
+  height: 100px;
+  background-color: black;
+  padding: 20px;
+  border-top: 3px #6e0000 solid;
+  min-height: 100px;
+  height: auto;
+  max-height: 200px;
+  margin: 0 auto; }
+  #idFooter a {
+    color: white; }
+    #idFooter a:hover {
+      color: indianred; }
+  #idFooter nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    overflow: hidden;
+    padding-left: 40px; }
+    #idFooter nav ul li {
+      float: left;
+      padding-right: 20px; }
+      #idFooter nav ul li a {
+        font-size: 1.4rem;
+        display: block;
+        text-align: center;
+        text-decoration: none; }
+  #idFooter #copyright {
+    float: left;
+    padding: 20px; }
+    @media screen and (max-width: 768px) {
+      #idFooter #copyright {
+        float: none;
+        display: block;
+        text-align: center;
+        padding-top: 0; } }
+  #idFooter .navFooter {
+    float: right; }
+    @media screen and (max-width: 768px) {
+      #idFooter .navFooter {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        max-width: 300px;
+        font-size: 0.8em; } }
+
+/* PAGINA FILM E SERIE TV */
+#frmFiltri {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #frmFiltri select {
+    line-height: 40px;
+    float: left;
+    padding-right: 10px; }
+  #frmFiltri .tbFiltri {
+    float: right;
+    list-style-type: none; }
+    #frmFiltri .tbFiltri li {
+      display: inline;
+      padding-left: 40px; }
+      #frmFiltri .tbFiltri li a {
+        line-height: 40px;
+        font-size: 1.3em; }
+
+.locandine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  align-content: space-around;
+  text-align: center; }
+  .locandine li {
+    width: 250px;
+    max-height: 357px;
+    position: relative;
+    padding: 0;
+    margin: 20px;
+    display: inline-block;
+    -moz-box-shadow: 1px 5px 7px 1px #000;
+    -webkit-box-shadow: 1px 5px 7px 1px #000;
+    box-shadow: 1px 5px 7px 1px #000; }
+    .locandine li img {
+      width: 250px;
+      height: 357px;
+      margin: 0;
+      padding: 0; }
+
+#sliderScheda {
+  background-color: maroon;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  #sliderScheda .title {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 999;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+91,000000+91,000000+91&0.65+41,0+82 */
+    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.65) 41%, transparent 82%, transparent 91%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.65) 41%, transparent 82%, transparent 91%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.65) 41%, transparent 82%, transparent 91%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    color: white;
+    width: 200px;
+    text-align: left;
+    padding-left: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    #sliderScheda .title .titleScheda {
+      padding-top: 10px;
+      font-size: 35px;
+      line-height: 30px; }
+
+.daNonPerdere {
+  padding: 30px;
+  width: 100%;
+  float: left; }
+  .daNonPerdere .locandina {
+    width: 250px;
+    height: 357px;
+    position: relative;
+    padding: 15px;
+    display: inline-block; }
+    .daNonPerdere .locandina img {
+      width: 250px;
+      height: 357px;
+      -moz-box-shadow: 1px 5px 7px 1px #000;
+      -webkit-box-shadow: 1px 5px 7px 1px #000;
+      box-shadow: 1px 5px 7px 1px #000; }
+  .daNonPerdere .cntScheda {
+    padding: 30px;
+    width: 60%; }
+    .daNonPerdere .cntScheda .subtitleScheda {
+      font-size: 22px;
+      padding-bottom: 5px; }
+
+.addPreferiti {
+  position: relative;
+  top: 20px;
+  right: 0px; }
+
+.barraScheda {
+  height: 150px;
+  background-color: gainsboro;
+  margin: 0 auto;
+  text-align: center; }
+  .barraScheda .inProgramma {
+    width: 260px; }
+  .barraScheda .centrato {
+    margin: 0 auto;
+    text-align: center; }
+  .barraScheda .grande {
+    font-size: 50px;
+    line-height: 1.3em; }
+  .barraScheda .div3 {
+    width: 33%;
+    text-align: center;
+    padding-top: 30px; }
+    .barraScheda .div3 h2 {
+      line-height: 1.2em;
+      padding-bottom: 0px; }
+
+/*# sourceMappingURL=stili.css.map */
